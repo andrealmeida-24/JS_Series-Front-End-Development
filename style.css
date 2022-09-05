@@ -1,0 +1,924 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Alumni Sans Pinstripe", sans-serif;
+  background-color: black;
+}
+
+body {
+  min-height: 100%;
+}
+
+/*Nav Area*/
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background: black;
+  height: 60px;
+}
+
+h1 {
+  margin-left: 30px;
+  margin-right: auto;
+  font-size: 1.2em;
+  padding: 5px 5px;
+  letter-spacing: 1.2px;
+  color: white;
+}
+
+#frontend-text {
+  margin-right: 2px;
+  color: aquamarine;
+}
+#frontend-text:hover {
+  color: aquamarine;
+}
+
+#calculator {
+  color: white;
+  text-transform: uppercase;
+}
+
+#github-logo {
+  height: 20px;
+  width: 20px;
+  margin-right: 5px;
+}
+
+#linkedin-logo {
+  height: 30px;
+  width: 30px;
+  margin-right: 30px;
+}
+
+/* Main */
+.wrapper--intro {
+  visibility: visible;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.intro--text {
+  color: white;
+  width: 7ch;
+  animation: typing 0.6s steps(8), blink 0.5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-size: 3em;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+/*PARENT DIV*/
+.main--elements {
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  overflow: auto;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.first--elements {
+  display: flex;
+  margin: 20px auto 20px auto;
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+#what-is-front-end--text {
+  color: white;
+  font-size: 2em;
+}
+
+#less-than--text,
+#greater-than--text {
+  margin-left: 5px;
+  margin-right: 5px;
+  color: aquamarine;
+}
+
+.front-end--btn {
+  border: none;
+  cursor: pointer;
+}
+
+/*FADE IN IMAGE*/
+.fade-in {
+  animation: fadeIn ease 3s;
+  -webkit-animation: fadeIn ease 3s;
+  -moz-animation: fadeIn ease 3s;
+  -o-animation: fadeIn ease 3s;
+  -ms-animation: fadeIn ease 3s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade-in-two {
+  animation: fadeIn ease 9s;
+  -webkit-animation: fadeIn ease 9s;
+  -moz-animation: fadeIn ease 9s;
+  -o-animation: fadeIn ease 9s;
+  -ms-animation: fadeIn ease 9s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/*GENERAL IMAGES*/
+#html--img,
+#css--img,
+#js--img,
+#react--img,
+#angular--img,
+#vue--img,
+#git--img {
+  visibility: hidden;
+  max-width: 10%;
+  height: auto;
+}
+
+/* HTML ROW*/
+.html--row {
+  visibility: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  background-color: orange;
+  border: 1px solid orange;
+
+  margin: 20px 40px 10px 40px;
+}
+
+#html--txt {
+  visibility: hidden;
+  color: black;
+  font-weight: bold;
+  font-size: 1.4em;
+  letter-spacing: 1px;
+  margin-left: auto;
+  justify-content: space-between;
+  background: none;
+}
+
+#html--btn {
+  visibility: hidden;
+  margin-left: auto;
+  margin-right: 30px;
+  background-color: lightgray;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  color: black;
+  font-size: 0.9em;
+  padding: 5px 15px;
+}
+
+/* CSS ROW */
+.css--row {
+  visibility: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  background-color: #2965f1;
+  border: 1px solid #2965f1;
+
+  margin: 10px 40px 10px 40px;
+}
+
+#css--txt {
+  visibility: hidden;
+  color: white;
+  font-weight: bold;
+  font-size: 1.4em;
+  letter-spacing: 1px;
+  margin-left: auto;
+  justify-content: space-between;
+  background: none;
+}
+
+#css--btn {
+  visibility: hidden;
+  margin-left: auto;
+  margin-right: 30px;
+  background-color: lightgray;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  color: black;
+  font-size: 0.9em;
+  padding: 5px 15px;
+}
+
+/*JAVASCRIPT ROW*/
+.js--row {
+  visibility: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  background-color: #f0db4f;
+  border: 1px solid #f0db4f;
+
+  margin: 10px 40px 10px 40px;
+}
+
+#js--txt {
+  visibility: hidden;
+  color: black;
+  font-weight: bold;
+  font-size: 1.4em;
+  letter-spacing: 1px;
+  margin-left: auto;
+  justify-content: space-between;
+  background: none;
+}
+
+#js--btn {
+  visibility: hidden;
+  margin-left: auto;
+  margin-right: 30px;
+  background-color: lightgray;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  color: black;
+  font-size: 0.9em;
+  padding: 5px 15px;
+}
+
+/*REACT ROW*/
+.react--row {
+  visibility: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  background-color: #61dbfb;
+  border: 1px solid #61dbfb;
+
+  margin: 10px 40px 10px 40px;
+}
+
+#react--txt {
+  visibility: hidden;
+  color: black;
+  font-weight: bold;
+  font-size: 1.4em;
+  letter-spacing: 1px;
+  margin-left: auto;
+  justify-content: space-between;
+  background: none;
+}
+
+#react--btn {
+  visibility: hidden;
+  margin-left: auto;
+  margin-right: 30px;
+  background-color: lightgray;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  color: black;
+  font-size: 0.9em;
+  padding: 5px 15px;
+}
+
+/*ANGULAR ROW*/
+.angular--row {
+  visibility: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  background-color: #dd1b16;
+  border: 1px solid #dd1b16;
+
+  margin: 10px 40px 10px 40px;
+}
+
+#angular--txt {
+  visibility: hidden;
+  color: black;
+  font-weight: bold;
+  font-size: 1.4em;
+  letter-spacing: 1px;
+  margin-left: auto;
+  justify-content: space-between;
+  background: none;
+}
+
+#angular--btn {
+  visibility: hidden;
+  margin-left: auto;
+  margin-right: 30px;
+  background-color: lightgray;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  color: black;
+  font-size: 0.9em;
+  padding: 5px 15px;
+}
+
+/* VUE ROW */
+.vue--row {
+  visibility: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  background-color: #42b883;
+  border: 1px solid #42b883;
+
+  margin: 10px 40px 10px 40px;
+}
+
+#vue--txt {
+  visibility: hidden;
+  color: black;
+  font-weight: bold;
+  font-size: 1.4em;
+  letter-spacing: 1px;
+  margin-left: auto;
+  justify-content: space-between;
+  background: none;
+}
+
+#vue--btn {
+  visibility: hidden;
+  margin-left: auto;
+  margin-right: 30px;
+  background-color: lightgray;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  color: black;
+  font-size: 0.9em;
+  padding: 5px 15px;
+}
+
+/* GIT ROW */
+.git--row {
+  visibility: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  background-color: #f34f29;
+  border: 1px solid #f34f29;
+
+  margin: 10px 40px 10px 40px;
+}
+
+#git--txt {
+  visibility: hidden;
+  color: black;
+  font-weight: bold;
+  font-size: 1.4em;
+  letter-spacing: 1px;
+  margin-left: auto;
+  justify-content: space-between;
+  background: none;
+}
+
+#git--btn {
+  visibility: hidden;
+  margin-left: auto;
+  margin-right: 30px;
+  background-color: lightgray;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  color: black;
+  font-size: 0.9em;
+  padding: 5px 15px;
+}
+
+/* MODALS */
+/*Default for every modal*/
+/*background*/
+.front-end-modal,
+.html-modal,
+.css-modal,
+.js-modal,
+.react-modal,
+.angular-modal,
+.vue-modal,
+.git-modal {
+  display: none; /* Hidden by default */
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(3px);
+  z-index: 5;
+}
+
+/* Front-End Modal Box */
+.front-end-modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  max-height: 90%;
+
+  background-color: white;
+  padding: 3rem;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+#front-end-modal-p {
+  color: black;
+  background: none;
+  font-size: 1.4em;
+  font-weight: 800;
+}
+
+/* Front-End Modal Close Button */
+.front-end-modal-close {
+  position: absolute;
+  top: 0rem;
+  right: 1.5rem;
+  font-size: 3rem;
+  color: #333;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+/* Close buttons default*/
+.front-end-modal-close:hover,
+.front-end-modal-close:focus,
+.html-modal-close:hover,
+.html-modal-close:focus,
+.css-modal-close:hover,
+.css-modal-close:focus,
+.js-modal-close:hover,
+.js-modal-close:focus,
+.react-modal-close:hover,
+.react-modal-close:focus,
+.angular-modal-close:hover,
+.angular-modal-close:focus,
+.vue-modal-close:hover,
+.vue-modal-close:focus,
+.git-modal-close:hover,
+.git-modal-close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/*HTML MODAL/*
+/* HTML Modal Box */
+.html-modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  max-height: 90%;
+  border: 1px solid white;
+  background: linear-gradient(
+    45deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(240, 101, 41, 1) 78%
+  );
+  padding: 3rem;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+#html-modal-header {
+  font-size: 2.2em;
+  background: none;
+  margin-bottom: 10px;
+  font-weight: 800;
+  color: white;
+}
+
+#html-modal-p {
+  color: white;
+  background: none;
+  font-size: 1.4em;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+/* HTML Modal Close Button */
+.html-modal-close {
+  position: absolute;
+  top: 0rem;
+  right: 1.5rem;
+  font-size: 3rem;
+  color: white;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+/*CSS MODAL/*
+/* CSS Modal Box */
+.css-modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  max-height: 90%;
+  border: 1px solid white;
+  background: linear-gradient(
+    45deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(41, 101, 241, 1) 75%
+  );
+  padding: 3rem;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+#css-modal-header {
+  font-size: 2.2em;
+  background: none;
+  margin-bottom: 10px;
+  font-weight: 800;
+  color: white;
+}
+
+#css-modal-p {
+  color: white;
+  background: none;
+  font-size: 1.4em;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+/* CSS Modal Close Button */
+.css-modal-close {
+  position: absolute;
+  top: 0rem;
+  right: 1.5rem;
+  font-size: 3rem;
+  color: white;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+/*JAVASCRIPT MODAL/*
+/* JS Modal Box */
+.js-modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  max-height: 90%;
+  border: 1px solid white;
+  background: linear-gradient(
+    45deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(240, 219, 79, 1) 100%
+  );
+  padding: 3rem;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+#js-modal-header {
+  font-size: 2.2em;
+  background: none;
+  margin-bottom: 10px;
+  font-weight: 800;
+  color: white;
+}
+
+#js-modal-p {
+  color: white;
+  background: none;
+  font-size: 1.4em;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+/* JS Modal Close Button */
+.js-modal-close {
+  position: absolute;
+  top: 0rem;
+  right: 1.5rem;
+  font-size: 3rem;
+  color: white;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+/*REACT MODAL/*
+/* React Modal Box */
+.react-modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  max-height: 90%;
+  border: 1px solid white;
+  background: linear-gradient(
+    45deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(97, 219, 251, 1) 100%
+  );
+  padding: 3rem;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+#react-modal-header {
+  font-size: 2.2em;
+  background: none;
+  margin-bottom: 10px;
+  font-weight: 800;
+  color: white;
+}
+
+#react-modal-p {
+  color: white;
+  background: none;
+  font-size: 1.4em;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+/* React Modal Close Button */
+.react-modal-close {
+  position: absolute;
+  top: 0rem;
+  right: 1.5rem;
+  font-size: 3rem;
+  color: white;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+/*ANGULAR MODAL/*
+/* Angular Modal Box */
+.angular-modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  max-height: 90%;
+  border: 1px solid white;
+  background: linear-gradient(
+    45deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(221, 27, 22, 1) 75%
+  );
+  padding: 3rem;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+#angular-modal-header {
+  font-size: 2.2em;
+  background: none;
+  margin-bottom: 10px;
+  font-weight: 800;
+  color: white;
+}
+
+#angular-modal-p {
+  color: white;
+  background: none;
+  font-size: 1.4em;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+/* Angular Modal Close Button */
+.angular-modal-close {
+  position: absolute;
+  top: 0rem;
+  right: 1.5rem;
+  font-size: 3rem;
+  color: white;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+/*VUE MODAL/*
+/* Vue Modal Box */
+.vue-modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  max-height: 90%;
+  border: 1px solid white;
+  background: linear-gradient(
+    45deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(66, 184, 131, 1) 75%
+  );
+  padding: 3rem;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+#vue-modal-header {
+  font-size: 2.2em;
+  background: none;
+  margin-bottom: 10px;
+  font-weight: 800;
+  color: white;
+}
+
+#vue-modal-p {
+  color: white;
+  background: none;
+  font-size: 1.4em;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+/* Angular Modal Close Button */
+.vue-modal-close {
+  position: absolute;
+  top: 0rem;
+  right: 1.5rem;
+  font-size: 3rem;
+  color: white;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+/*GIT MODAL/*
+/* GIT Modal Box */
+.git-modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  max-height: 90%;
+  border: 1px solid white;
+  background: linear-gradient(
+    45deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(243, 79, 41, 1) 75%
+  );
+  padding: 3rem;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+#git-modal-header {
+  font-size: 2.2em;
+  background: none;
+  margin-bottom: 10px;
+  font-weight: 800;
+  color: white;
+}
+
+#git-modal-p {
+  color: white;
+  background: none;
+  font-size: 1.4em;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+/* GIT Modal Close Button */
+.git-modal-close {
+  position: absolute;
+  top: 0rem;
+  right: 1.5rem;
+  font-size: 3rem;
+  color: white;
+  cursor: pointer;
+  border: none;
+  background: none;
+}

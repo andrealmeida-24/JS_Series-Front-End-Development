@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!--FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&display=swap"
+      rel="stylesheet"
+    />
+    <!--STYLE-->
+    <link rel="stylesheet" href="style.css" />
+    <title>Front-End Dev.</title>
+  </head>
+  <body>
+    <nav>
+      <!--NAVBAR-->
+      <h1>
+        <span id="frontend-text">&ltFRONT-END/&gt</span>
+        <span id="development-text">DEVELOPMENT.</span>
+      </h1>
+      <a href="https://github.com/andrealmeida-24" target="_blank">
+        <img id="github-logo" src="GitHub-Mark-Light-120px-plus.png" />
+      </a>
+      <a
+        href="https://www.linkedin.com/in/andr%C3%A9-almeida-web-dev/"
+        target="_blank"
+      >
+        <img id="linkedin-logo" src="linkedIn.png" />
+      </a>
+    </nav>
+    <main>
+      <!--Wrapper Intro-->
+      <div class="wrapper--intro">
+        <div class="intro--text">Welcome.</div>
+      </div>
+      <!--Main Elements-->
+      <div class="main--elements">
+        <!--First Row-->
+        <div class="first--elements">
+          <button class="front-end--btn">
+            <h2 id="what-is-front-end--text">
+              <span id="less-than--text">&lt </span>
+              What is Front-End ?<span id="greater-than--text">/&gt</span>
+            </h2>
+          </button>
+        </div>
+        <!--Second Row-->
+        <div class="html--row">
+          <img id="html--img" src="html.png" />
+          <p id="html--txt">For text.</p>
+          <button id="html--btn">Inspect.</button>
+        </div>
+        <div class="css--row">
+          <img id="css--img" src="css.png" />
+          <p id="css--txt">For styles.</p>
+          <button id="css--btn">Inspect.</button>
+        </div>
+        <div class="js--row">
+          <img id="js--img" src="js.png" />
+          <p id="js--txt">For functionality.</p>
+          <button id="js--btn">Inspect.</button>
+        </div>
+        <div class="react--row">
+          <img id="react--img" src="react.png" />
+          <p id="react--txt">For reacting.</p>
+          <button id="react--btn">Inspect.</button>
+        </div>
+        <div class="angular--row">
+          <img id="angular--img" src="angular.png" />
+          <p id="angular--txt">Alternative for React...</p>
+          <button id="angular--btn">Inspect.</button>
+        </div>
+        <div class="vue--row">
+          <img id="vue--img" src="vue.png" />
+          <p id="vue--txt">Alternative for React...</p>
+          <button id="vue--btn">Inspect.</button>
+        </div>
+        <div class="git--row">
+          <img id="git--img" src="git.png" />
+          <p id="git--txt">For version control.</p>
+          <button id="git--btn">Inspect.</button>
+        </div>
+      </div>
+      <!--MODALS-->
+      <div id="front-end-modal" class="front-end-modal">
+        <!-- Modal Front-End -->
+        <div class="front-end-modal-content">
+          <span id="front-end-modal-close" class="front-end-modal-close"
+            >&times;</span
+          >
+          <p id="front-end-modal-p">
+            Front-end web development, also known as client-side development is
+            the practice of producing HTML, CSS and JavaScript for a website or
+            Web Application so that a user can see and interact with them
+            directly.
+          </p>
+        </div>
+      </div>
+      <!--MODAL HTML-->
+      <div id="html-modal" class="html-modal">
+        <div class="html-modal-content">
+          <span id="html-modal-close" class="html-modal-close">&times;</span>
+          <h3 id="html-modal-header">HTML: HyperText Markup Language</h3>
+          <p id="html-modal-p">
+            Is the most basic building block of the Web. It defines the meaning
+            and structure of web content.HTML uses "markup" to annotate text,
+            images, and other content for display in a Web browser.
+          </p>
+        </div>
+      </div>
+      <!--MODAL CSS-->
+      <div id="css-modal" class="css-modal">
+        <div class="css-modal-content">
+          <span id="css-modal-close" class="css-modal-close">&times;</span>
+          <h3 id="css-modal-header">CSS: Cascading Style Sheets</h3>
+          <p id="css-modal-p">
+            CSS describes how elements should be rendered on screen, on paper,
+            in speech, or on other media.CSS is among the core languages of the
+            open web and is standardized across Web browsers.
+          </p>
+        </div>
+      </div>
+      <!--MODAL JAVASCRIPT-->
+      <div id="js-modal" class="js-modal">
+        <div class="js-modal-content">
+          <span id="js-modal-close" class="js-modal-close">&times;</span>
+          <h3 id="js-modal-header">JAVASCRIPT</h3>
+          <p id="js-modal-p">
+            Javascript is a prototype-based, multi-paradigm, single-threaded,
+            dynamic language, supporting object-oriented, imperative, and
+            declarative (e.g. functional programming) styles.
+          </p>
+        </div>
+      </div>
+      <!--MODAL REACT-->
+      <div id="react-modal" class="react-modal">
+        <div class="react-modal-content">
+          <span id="react-modal-close" class="react-modal-close">&times;</span>
+          <h3 id="react-modal-header">REACT.js</h3>
+          <p id="react-modal-p">
+            React is a library for building user interfaces. React is not a
+            framework, it's not even exclusive to the web. It's used with other
+            libraries to render to certain environments. For instance, React
+            Native can be used to build mobile applications.
+          </p>
+        </div>
+      </div>
+      <!--MODAL ANGULAR-->
+      <div id="angular-modal" class="angular-modal">
+        <div class="angular-modal-content">
+          <span id="angular-modal-close" class="angular-modal-close"
+            >&times;</span
+          >
+          <h3 id="angular-modal-header">Angular.js</h3>
+          <p id="angular-modal-p">
+            Angular.js is a framework for dynamic web apps. It lets you use HTML
+            as your template language and lets you extend HTML's syntax to
+            express your application's components clearly and succinctly.
+          </p>
+        </div>
+      </div>
+      <!--MODAL VUE-->
+      <div id="vue-modal" class="vue-modal">
+        <div class="vue-modal-content">
+          <span id="vue-modal-close" class="vue-modal-close">&times;</span>
+          <h3 id="vue-modal-header">Vue.js</h3>
+          <p id="vue-modal-p">
+            Vue.js is a framework for building user interfaces. It builds on top
+            of standard HTML, CSS and JS, and provides a declarative and
+            component-based programming model that helps you develop user
+            interfaces, be it simple or complex.
+          </p>
+        </div>
+      </div>
+      <!--GIT VUE-->
+      <div id="git-modal" class="git-modal">
+        <div class="git-modal-content">
+          <span id="git-modal-close" class="git-modal-close">&times;</span>
+          <h3 id="git-modal-header">GIT</h3>
+          <p id="git-modal-p">
+            Git's a free and open source software for distributed version
+            control. Tracking changes in any set of files, usually used for
+            coordinating work among programmers collaboratively developing
+            source code during software development.
+          </p>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
